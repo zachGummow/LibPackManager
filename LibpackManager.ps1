@@ -1,9 +1,12 @@
 param ([string]$libpack = $null)
 
+$CurrentVersion = $null
+$LatestVersion = $null
+
 function Display-Header {
   Write-Output "Managing LibPack at: $libpack"
-  Write-Output "Current Version: "
-  Write-Output "Latest Version: "
+  Write-Output "Current Version: $CurrentVersion"
+  Write-Output "Latest Version: $LatestVersion"
   Write-Output ""
 }
 
